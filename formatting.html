@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+p {
+    border: 1px solid cyan;
+    padding: 20px;
+    margin: 40px;
+    color: red;
+    font-family: courier;
+    font-size: 120%;
+}
+#p01 {
+    background-color: yellow;
+    border: 1px solid black;
+    color: blue
+}
+p.error {
+    border: 3px solid red;
+    padding: 10px;
+    color: white;
+    background-color: black
+}
+h1 {
+    color: blue;
+    font-family: verdana;
+    font-size: 200%;
+}
+a:link {
+    color: green;
+    background-color: transparent;
+    text-decoration: none;
+}
+a:visited {
+    color: pink;
+    background-color: transparent;
+    text-decoration: none;
+}
+a:hover {
+    color: red;
+    background-color: transparent;
+    text-decoration: underline;
+}
+a:active {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: underline;
+}
+</style>
+</head>
+<body>
+<h1>All the headings can be made <a href="http://www.thesaurus.com/browse/blue" target="_blank">blue</a> and <a href="http://www.thesaurus.com/browse/bigger" target="_blank">twice as big</a></h1>
+<p>All paragraphs can be in boxes and in red font</p>
+<p id="p01">By attaching IDs, paragraphs can have special styles</p>
+<p class="error">Class of elements can also be different</p>
+<h4> Jump to <a href="#C1">Chapter 1</a>, <a href="#C2">Chapter 2</a>, <a href="#C3">Chapter 3</a>, <a href="#C4">Chapter 4</a>, <a href="#C5">Chapter 5</a>, <a href="#C6">Chapter 6</a></h4>
+<h2 id="C1"style="background-color:rgb(179, 0, 179)">1) Sub- and super-scripts</h2>
+<p>2<sup>5</sup>=32</p>
+<p>2<sup>6</sup>=64</p>
+<p>2<sup>7</sup>=128</p>
+<p>H<sub>2</sub>O is a water molecule</p>
+
+<h2 id="C2" style="background-color:red">2) Show what's <u>truly</u> important</h2>
+	<p><strong>Strong</strong> and <b>bold</b> texts usually look the same</p>
+	<p>Just like <em>emphasized</em> and <i>italics</i></p>
+
+<h2 id="C3" style="background-color:orange">3) Highlighting</h2>
+	<p>I wonder how to change the colour of <mark>highlighted</mark> words</p>
+
+<h2 id="C4" style="background-color:rgb(0, 232, 56)">4) Sarcasm</h2>
+	<p>Hide <del>your true soul</del> behind dark humour and mean jokes. </p>
+
+<h2 id="C5" style="background-color:rgb(0, 153, 255)">5) In case I need to city something</h2>
+	<blockquote cite="https://en.wikipedia.org/wiki/String_theory">
+	In physics, string theory is a theoretical framework in which the point-like particles of particle physics are replaced by one-dimensional objects called strings. It describes how these strings propagate through space and interact with each other. On distance scales larger than the string scale, a string looks just like an ordinary particle, with its mass, charge, and other properties determined by the vibrational state of the string. In string theory, one of the many vibrational states of the string corresponds to the graviton, a quantum mechanical particle that carries gravitational force. Thus string theory is a theory of quantum gravity.
+	</blockquote>
+	<p>Bertrand Russel once said: 
+	<q>The whole problem with the world is that fools and fanatics are always so certain of themselves, and wiser people so full of doubts.</q>
+	</p>
+
+<h2 id="C6" style="background-color:cyan">6) Small cool things</h2>
+<p>The <abbr title="Union of Soviet Socialist Republics">USSR</abbr> is another word for Soviet Union.</p>
+<p><b>bdo</b> tag stands for bi-directional override and can have <b>dir="rtl"</b> right-to-left direction</p>
+<p id="p01"><bdo dir="rtl">This line will be written from right to left</bdo><br>
+<bdo dir="rtl">I can use it to learn mirrored language!</bdo></p>
+
+<!-- Every language wants to have a unique way of writing comments... But why can't they all be hashes of double forward slashes... -->
+
+
+</body>
+</html>
+
