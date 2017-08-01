@@ -15,6 +15,10 @@ p {
     border: 1px solid black;
     color: blue
 }
+#p02 {
+    border: 1px solid blue;
+    color: purple
+}
 p.error {
     border: 3px solid red;
     padding: 10px;
@@ -53,7 +57,7 @@ a:active {
 <p>All paragraphs can be in boxes and in red font</p>
 <p id="p01">By attaching IDs, paragraphs can have special styles</p>
 <p class="error">Class of elements can also be different</p>
-<h4> Jump to <a href="#C1">Chapter 1</a>, <a href="#C2">Chapter 2</a>, <a href="#C3">Chapter 3</a>, <a href="#C4">Chapter 4</a>, <a href="#C5">Chapter 5</a>, <a href="#C6">Chapter 6</a></h4>
+<h4> Jump to <a href="#C1">Chapter 1</a>, <a href="#C2">Chapter 2</a>, <a href="#C3">Chapter 3</a>, <a href="#C4">Chapter 4</a>, <a href="#C5">Chapter 5</a>, <a href="#C6">Chapter 6</a>, <a href="#C7">Chapter 7</a></h4>
 <h2 id="C1"style="background-color:rgb(179, 0, 179)">1) Sub- and super-scripts</h2>
 <p>2<sup>5</sup>=32</p>
 <p>2<sup>6</sup>=64</p>
@@ -83,6 +87,19 @@ a:active {
 <p><b>bdo</b> tag stands for bi-directional override and can have <b>dir="rtl"</b> right-to-left direction</p>
 <p id="p01"><bdo dir="rtl">This line will be written from right to left</bdo><br>
 <bdo dir="rtl">I can use it to learn mirrored language!</bdo></p>
+
+<h2 id="C7" style="background-color:grey">7) How to format code and maths</h2>
+
+<p id="p02">To copy the highlighted text, press <kbd>Ctrl + C</kbd></p>
+<p id="p02">If the input is negative, the program will return <samp>Arithmetic Mistake</samp></p>
+<p id="p02">Newton discovered that <var>F</var> = <var>ma</var></p>
+<p id="p02">
+<code>
+x = 10;<br>
+y = 22;<br>
+z = x + y;
+</code>
+</p>
 
 <!-- Every language wants to have a unique way of writing comments... But why can't they all be hashes of double forward slashes... -->
 
