@@ -20,6 +20,22 @@ function facechange(smile) {
 <button type="button" onclick="facechange(0)">Hungry</button>
 </p>
 
+<h2 ><span id="water" style="color:red">You are thirsty!</span></h2>
+
+<script>
+function drink() {
+    document.getElementById("water").style.fontSize = "30px"; 
+    document.getElementById("water").style.color = "white";
+    document.getElementById("water").style.backgroundColor = "blue";        
+    document.getElementById("water").innerHTML = "Well, done! You are healthy!"
+}
+</script>
+
+<button type="button" onclick="drink()">Drink Water!</button>
+
+
+
+
 </body>
 </html>
 
