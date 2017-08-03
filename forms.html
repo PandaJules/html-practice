@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<form>
+  <fieldset style="width: 400px">
+    <legend>Personal information:</legend>
+	First name:<br>
+	<input type="text" name="firstname">
+	<br>
+	Last name:<br>
+	<input type="text" name="lastname"><br>
+	Birthday: <br>
+	<input type="date" name="bday">
+	<br><br>
+	Country:
+	<select name="countries">
+	    <option value="Rus">Russia</option>
+	    <option value="Ge">Germany</option>
+	    <option value="Fr">France</option>
+	    <option value="It">Italy</option>
+	    <option value="Eng">England</option>
+	    <option value="Usa">USA</option>
+    </select>
+	<br><br>
+	<input type="radio" name="gender" value="male" checked> Male<br>
+	<input type="radio" name="gender" value="female"> Female<br>
+	<br>
+    <input type="submit" value="Submit">
+  </fieldset>
+</form>
+<br><br>
+<form action="mailto:barackobama@whitehouse.com" method="post" enctype="text/plain">
+<fieldset style="width: 400px">
+    <legend>Sending an email to barackobama@whitehouse.com</legend>
+	Name:<br>
+	<input type="text" name="name"><br>
+	Email content:<br>
+	<input type="text" name="content" size="50"><br><br>
+	<input type="checkbox" name="key">Attach my public key
+	<br>
+	<input type="checkbox" name="signature">Sign the email<br><br>
+	<input type="submit" value="Send">
+	<input type="reset" value="Reset">
+</fieldset>
+</form>
+<br><br>
+<form>
+  <textarea name="message" rows="5" cols="50">
+  You can put anything you want here.
+  It's a text area which acts as a multiple-line input field.</textarea>
+  <br>
+  <input type="submit">
+  <button type="button" onclick="alert('Unfortunately, submit buttons do not work for now')">Another button!</button>
+</form>
+<br><br>
+<form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+  0
+  <input type="range" id="a" name="a" value="50">
+  100 +
+  <input type="number" id="b" name="b" value="50" style="width:50px">
+  =
+  <output name="x" for="a b"></output>
+</form>
+
+</body>
+</html>
