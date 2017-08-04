@@ -6,13 +6,13 @@
   <fieldset style="width: 400px">
     <legend>Personal information:</legend>
 	First name:<br>
-	<input type="text" name="firstname">
+	<input type="text" name="firstname" autofocus placeholder="John" required>
 	<br>
 	Last name:<br>
-	<input type="text" name="lastname"><br>
+	<input type="text" name="lastname" placeholder="Smith" required><br>
 	Birthday: <br>
 	<input type="date" name="bday">
-	<br><br>
+	<br>
 	Country:
 	<select name="countries">
 	    <option value="Rus">Russia</option>
@@ -22,10 +22,10 @@
 	    <option value="Eng">England</option>
 	    <option value="Usa">USA</option>
     </select>
-	<br><br>
+	<br>
 	<input type="radio" name="gender" value="male" checked> Male<br>
 	<input type="radio" name="gender" value="female"> Female<br>
-	<br>
+	<br>Attach your photo: <input type="file" name="img"><br>
     <input type="submit" value="Submit">
   </fieldset>
 </form>
@@ -36,24 +36,23 @@
 	Name:<br>
 	<input type="text" name="name"><br>
 	Email content:<br>
-	<input type="text" name="content" size="50"><br><br>
+	<input type="text" name="content" size="50" maxlength="300" value="Max length of the email is 300 characters"><br><br>
 	<input type="checkbox" name="key">Attach my public key
 	<br>
 	<input type="checkbox" name="signature">Sign the email<br><br>
 	<input type="submit" value="Send">
 	<input type="reset" value="Reset">
+	<input type="file" name="attachments" multiple>
 </fieldset>
 </form>
 <br><br>
 <form>
-  <textarea name="message" rows="5" cols="50">
-  You can put anything you want here.
-  It's a text area which acts as a multiple-line input field.</textarea>
+  <textarea name="message" rows="5" cols="50" placeholder="You can put anything you want here. It's a text area which acts as a multiple-line input field."></textarea>
   <br>
   <input type="submit">
   <button type="button" onclick="alert('Unfortunately, submit buttons do not work for now')">Another button!</button>
 </form>
-<br><br>
+<br>
 <form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
   0
   <input type="range" id="a" name="a" value="50">
