@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>My Home City</h1>
+
+<div id="map" style="width:500px;height:600px;background:yellow"></div>
+
+<script>
+function myMap() {
+var mapOptions = {
+    center: new google.maps.LatLng(59.9, 30.3),
+    zoom: 10,
+    mapTypeId: google.maps.MapTypeId.ROADMAP
+}
+var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+}
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDnB7-Z5r3AOIMhAjVM4rXcbecPn-FMeoE&callback=myMap"></script>
+
+</body>
+</html>
+

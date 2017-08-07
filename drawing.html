@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<canvas id="myLine" width="200" height="100" style="border:1px solid #FF0000;">
+Your browser does not support the HTML5 canvas tag.</canvas>
+
+<script>
+var c = document.getElementById("myLine");
+var ctx = c.getContext("2d");
+ctx.moveTo(0,0);
+ctx.lineTo(200,100);
+ctx.moveTo(50,0);
+ctx.lineTo(50,25);
+ctx.moveTo(100,0);
+ctx.lineTo(100,50);
+ctx.moveTo(150,0);
+ctx.lineTo(150,75);
+ctx.stroke();
+</script>
+
+<canvas id="myCircle" width="200" height="100" style="border:1px solid #0000FF;">
+Your browser does not support the HTML5 canvas tag.</canvas>
+
+<script>
+var c = document.getElementById("myCircle");
+var ctx = c.getContext("2d");
+ctx.beginPath();
+ctx.arc(95,50,40,0,2*Math.PI);
+ctx.stroke();
+</script>
+
+<canvas id="myWord" width="300" height="100" style="border:1px solid #00FF00;">
+Your browser does not support the HTML5 canvas tag.</canvas>
+
+<script>
+var c = document.getElementById("myWord");
+var ctx = c.getContext("2d");
+ctx.font = "30px Arial";
+ctx.fillText("Hallo! Wie geht's?",30,50);
+</script>
+
+<p>Image to use:</p>
+<img id="scream" src="./images/mona_lisa.jpg" style="width:100px">
+
+<p>Canvas to fill:</p>
+<canvas id="myCanvas" width="110" height="155" style="border:1px solid #d3d3d3;"></canvas>
+
+<p><button onclick="myCanvas()">Try it</button></p>
+
+<script>
+function myCanvas() {
+    var c = document.getElementById("myCanvas");
+    var ctx = c.getContext("2d");
+    var img = document.getElementById("scream");
+    ctx.drawImage(img,5,5,100,145);
+}
+</script>
+
+</body>
+</html>
